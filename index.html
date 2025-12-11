@@ -1,0 +1,72 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dynamic Dropdowns Demo — GitHub Pages</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Dynamic Dropdowns on GitHub Pages</h1>
+    <p>This sample demonstrates client-side populated, cascading dropdowns (Country → State → City) using local JSON files. Works on GitHub Pages without any server-side code.</p>
+  </header>
+
+  <main>
+    <section class="panel">
+      <form id="location-form" autocomplete="on">
+        <div class="field">
+          <label for="country">Country</label>
+          <select id="country" aria-label="Country">
+            <option value="">Loading…</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="state">State</label>
+          <select id="state" aria-label="State" disabled>
+            <option value="">—</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="city">City</label>
+          <select id="city" aria-label="City" disabled>
+            <option value="">—</option>
+          </select>
+        </div>
+
+        <div class="actions">
+          <button type="button" id="clear">Clear selection</button>
+          <button type="button" id="reload">Reload data</button>
+        </div>
+      </form>
+
+      <div id="status" role="status" aria-live="polite" class="status"></div>
+
+      <div class="summary" id="summary">
+        <h2>Selection</h2>
+        <p><strong>Country:</strong> <span id="summary-country">—</span></p>
+        <p><strong>State:</strong> <span id="summary-state">—</span></p>
+        <p><strong>City:</strong> <span id="summary-city">—</span></p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Tips</h2>
+      <ul>
+        <li>Preselect via URL parameters: <code>?country=IN&amp;state=KA&amp;city=blr</code></li>
+        <li>Selections persist in <code>localStorage</code> for convenience.</li>
+        <li>Data is fetched from local <code>data/*.json</code> files with <code>fetch()</code>.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <small>© 2025 Demo. Built for GitHub Pages.</small>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
