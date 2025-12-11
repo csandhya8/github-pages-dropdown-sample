@@ -1,0 +1,30 @@
+
+{
+  "KA": [
+    { "id": "blr", "name": "Bengaluru" },
+    { "id": "mys", "name": "Mysuru" }
+  ],
+  "TN": [
+    { "id": "maa", "name": "Chennai" },
+    { "id": "cov", "name": "Coimbatore" }
+  ],
+  "MH": [
+    { "id": "mum", "name": "Mumbai" },
+    { "id": "pun", "name": "Pune" }
+  ],
+  "CA": [
+    { "id": "sfo", "name": "San Francisco" },
+    { "id": "la", "name": "Los Angeles" }
+  ],
+  "NY": [
+    { "id": "nyc", "name": "New York City" },
+    { "id": "buf", "name": "Buffalo" }
+  ],
+  "BE": [
+    { "id": "ber", "name": "Berlin" }
+  ],
+  "BW": [
+    { "id": "stg", "name": "Stuttgart" },
+    { "id": "fre", "name": "Freiburg" }
+  ]
+}
